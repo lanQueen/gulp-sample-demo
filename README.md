@@ -13,8 +13,9 @@
 
 ```shell
 # clone repo
-$ git clone https://github.com/zce/pages-boilerplate.git my-awesome-pages
-$ cd my-awesome-pages
+$ git clone https://github.com/lanQueen/gulp-sample-demo.git
+gulp-sample-demo
+$ cd gulp-sample-demo
 # install dependencies
 $ yarn # or npm install
 ```
@@ -35,10 +36,6 @@ $ yarn build --production
 ```
 
 ### Available Scripts
-
-#### `yarn clean` or `npm run clean`
-
-Clean the `dist` & `.temp` files.
 
 #### `yarn lint` or `npm run lint`
 
@@ -75,14 +72,28 @@ Running projects in production mode.
 
 Deploy the `dist` folder to [GitHub Pages](https://pages.github.com).
 
+Deploy-url: (https://lanqueen.github.io/github-pages-demo/)
+
 ##### options
 
 - `branch`: The name of the branch you'll be pushing to, Default: `'gh-pages'`
 
+
 #### `yarn clean` or `npm run clean`
 
 Clean the `dist` & `temp` files.
-············ images folder
+
+## Folder Structure
+
+```
+└── gulp-sample-demo ································· project root
+   ├─ public ········································· static folder
+   │  └─ favicon.ico ································· static file (unprocessed)
+   ├─ src ············································ source folder
+   │  ├─ assets ······································ assets folder
+   │  │  ├─ fonts ···································· fonts folder
+   │  │  │  └─ pages.ttf ····························· font file (imagemin)
+   │  │  ├─ images ··································· images folder
    │  │  │  └─ logo.png ······························ image file (imagemin)
    │  │  ├─ scripts ·································· scripts folder
    │  │  │  └─ main.js ······························· script file (babel / uglify)
@@ -105,15 +116,4 @@ Clean the `dist` & `temp` files.
    ├─ gulpfile.js ···································· gulp tasks file
    ├─ package.json ··································· package file
    └─ yarn.lock ······································ yarn lock file
-## Folder Structure
-
-```
-└── my-awesome-pages ································· project root
-   ├─ public ········································· static folder
-   │  └─ favicon.ico ································· static file (unprocessed)
-   ├─ src ············································ source folder
-   │  ├─ assets ······································ assets folder
-   │  │  ├─ fonts ···································· fonts folder
-   │  │  │  └─ pages.ttf ····························· font file (imagemin)
-   │  │  ├─ images ·······················
 ```
