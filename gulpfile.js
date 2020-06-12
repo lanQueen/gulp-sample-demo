@@ -80,6 +80,7 @@ const lint = done => {
                 -webkit-animation: beat 0.4s ease-in-out infinite;
                         animation: beat 0.4s ease-in-out infinite;
  */
+
 const style = () => {
     return src(config.paths.styles, { 
                 base: config.src, 
@@ -186,7 +187,7 @@ const devServer = () => {
     })
 }
 
-// start
+// 打包后构建服务器
 const distServer = () => {
     bs.init({
         notify: false,
