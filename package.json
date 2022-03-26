@@ -39,7 +39,7 @@
     "gulp-swig": "^0.9.1",
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^4.0.1",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "standard": "^14.3.4"
   }
 }
